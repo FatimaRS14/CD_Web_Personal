@@ -1,6 +1,18 @@
 {% extends 'core/base.html' %}
 
-{% block content%}
+{% block title%} Portada {% endblock %}
+
+{% block background %}{% load static%}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+<!--El block backgroung se tiene que poner todo en una sola linea para evitar problemas-->
+
+{% block headers %}
+
+<h1>Fatima Rojas</h1>
+<span class="subheading">Ingeniera en Sistemas</span>
+
+{% endblock %}
+
+{% block content %}
 
 <h2>Home</h2>
 

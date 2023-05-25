@@ -1,9 +1,28 @@
 {% extends 'core/base.html' %}
 
+{% block title%} Acerca de {% endblock %}
+
+{% block background %}{% load static%}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+<!--El block backgroung se tiene que poner todo en una sola linea para evitar problemas-->
+
+{% block headers %}
+
+<h1>Acerca de</h1>
+<span class="subheading">Conoce mas sobre mi</span>
+
+{% endblock %}
+
 {% block content%}
 
-<h2>Acerca de</h2>
+<div class="row">
 
-<p>Conoceme</p>
-
+ <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/fatt.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Fatima Rojas</h2>   
+          <p>Nacida en el municipio de Huamantla....</p>
+          <p>Tengo habilidades en programación en los lenguajes como: <br> -Java <br> -Javascript</p>
+        </div>
+ </div>
 {% endblock %}

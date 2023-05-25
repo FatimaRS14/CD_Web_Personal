@@ -1,0 +1,64 @@
+/* Formulario */
+
+section .contacto {
+    padding: 60px 0;
+    background: #e2c6f8;
+
+}
+section .contacto .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #870fbe;
+    text-align: center;   
+}
+section .contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+section .contacto .formulario input[type=text],
+section .contacto .formulario input[type=correo],
+section .contacto .formulario textarea {
+    border:2px solid #cecece ;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color:#a4a4a4; 
+}
+section .contacto .formulario input[type=text]:focus,
+section .contacto .formulario input[type=correo]:focus,
+section .contacto .formulario textarea:focus {
+     border:2px solid #c074f3;
+}
+section .contacto .formulario input[type=text],
+section .contacto .formulario input[type=correo],
+section .contacto .formulario input[type=especie] {
+    width: 49%;
+    margin-bottom: 15px;
+    bottom: center; 
+
+}
+section .contacto .formulario textarea {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+section .contacto .formulario .boton {
+    margin: auto;
+    background: #3895ea;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+section .contacto .formulario .boton:hover {
+    background: #387bea;
+}
+  
