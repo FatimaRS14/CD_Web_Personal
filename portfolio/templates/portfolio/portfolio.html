@@ -24,8 +24,10 @@
 	        <div class="col-lg-7 col-md-8">
 	      		<h2 class="section-heading title">{{project.title}}</h2>   
 	          <p>{{project.description}}</p>
-	          <!--<p><a href="http://google.com">Más información</a></p>-->
-	      	</div>
+				{%if project.link %} <!--Servira para camprobar si es que hay un link agregado o no-->
+				<p><a href="{{project.link}}">Más información</a></p>
+				{% endif %}
+			</div>
 	      </div>
 </div>
 {% endfor %}
